@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: [], // Add whitelist of domains to pull data from. Nextjs will throw errors
+    domains: ["i.pravatar.cc"], // Add whitelist of domains to pull data from. Nextjs will throw errors
   },
 }
 
