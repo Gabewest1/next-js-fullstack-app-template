@@ -34,7 +34,7 @@ const Home: NextPageWithLayout = () => {
 }
 
 Home.getLayout = (page) => {
-  return <PrimaryLayout>{page}</PrimaryLayout>
+  return <PrimaryLayout justify="items-center">{page}</PrimaryLayout>
 }
 
 export default Home
