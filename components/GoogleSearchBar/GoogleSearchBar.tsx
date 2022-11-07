@@ -1,16 +1,18 @@
+import { useRouter } from "next/router"
 import { useState } from "react"
 
 export interface IGoogleSearchBar {}
 
 const GoogleSearchBar: React.FC<IGoogleSearchBar> = () => {
   const [searchTerm, setSearchTerm] = useState("")
+  const router = useRouter()
 
   return (
     <form
       className="flex flex-col items-center gap-y-5"
       onSubmit={(e) => {
         e.preventDefault()
-        alert(searchTerm)
+        router.push(`/results?search=${searchTerm}`)
       }}
     >
       <input
